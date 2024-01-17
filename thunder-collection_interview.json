@@ -1,0 +1,170 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "interview",
+    "dateExported": "2024-01-18T05:10:19.459Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c06ed00c-f4b4-430e-81d9-9f1aec72c46a",
+            "colId": "ea4b8602-3172-4b4b-b08f-f12489bf5cd1",
+            "containerId": "",
+            "name": "http://localhost/interview/totalcount.php?num_totalrole=true",
+            "url": "http://localhost/interview/totalcount.php?num_totalrole=true",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-17T23:35:04.750Z",
+            "modified": "2024-01-17T23:35:04.750Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "num_totalrole",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "bcb917c4-8cb8-428d-be77-b0f44b7b4f1d",
+            "colId": "ea4b8602-3172-4b4b-b08f-f12489bf5cd1",
+            "containerId": "",
+            "name": " Create endpoints to perform CRUD operations on employee records",
+            "url": "http://localhost/interview/taskone.php",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-18T04:46:37.548Z",
+            "modified": "2024-01-18T04:46:37.548Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"FirstName\": \"Blessing\",\r\n  \"LastName\": \"Adewale\",\r\n  \"HireDate\": \"1993-01-01\",\r\n  \"Department\": \"IT\",\r\n  \"Salary\": {\r\n      \"BaseSalary\": 10000.00,\r\n      \"Bonus\": 1000.00\r\n  },\r\n  \"Deductions\": {\r\n      \"HealthInsurance\": 500.00,\r\n      \"Tax\": 2000.00\r\n  }\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9a6ba81a-290a-461d-80f9-55d41449d68b",
+            "colId": "ea4b8602-3172-4b4b-b08f-f12489bf5cd1",
+            "containerId": "",
+            "name": "upate endpoints to perform CRUD operations on employee records",
+            "url": "http://localhost/interview/taskone.php",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-18T04:52:52.140Z",
+            "modified": "2024-01-18T04:52:52.140Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"EmployeeID\": \"3\",\r\n  \"FirstName\": \"Adebolawale\",\r\n  \"LastName\": \"tobi\",\r\n  \"Department\": \"IT\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "58877fa1-ed12-424f-adfa-38848900e4d4",
+            "colId": "ea4b8602-3172-4b4b-b08f-f12489bf5cd1",
+            "containerId": "",
+            "name": "update role validate role",
+            "url": "https://localhost/interview/tasktwo.php",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-18T04:55:44.626Z",
+            "modified": "2024-01-18T04:55:44.626Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \r\n  \"EmployeeID\": 7,\r\n  \"Role\": \"design\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dfe2761a-d83f-49b3-8f1f-8ec37f9b29d5",
+            "colId": "ea4b8602-3172-4b4b-b08f-f12489bf5cd1",
+            "containerId": "",
+            "name": "Create endpoints to find employees by name and ID.",
+            "url": "https://localhost/interview/taskthree.php?id=1&name=adewale",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-18T04:58:06.241Z",
+            "modified": "2024-01-18T04:58:26.821Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "name",
+                    "value": "adewale",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "38b9da86-5662-4e21-bb9e-eea46cbc23e9",
+            "colId": "ea4b8602-3172-4b4b-b08f-f12489bf5cd1",
+            "containerId": "",
+            "name": "api endpoint to Retrieve total employees.",
+            "url": "http://localhost/interview/taskfour.php?num_employee=true",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-01-18T05:02:35.421Z",
+            "modified": "2024-01-18T05:02:35.421Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "num_employee",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6f109b95-5241-41e7-a769-014bb0a8cc2c",
+            "colId": "ea4b8602-3172-4b4b-b08f-f12489bf5cd1",
+            "containerId": "",
+            "name": "api endpoint to Retrieve total available roles.",
+            "url": "http://localhost/interview/taskfour.php?num_totalrole=true",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-01-18T05:04:36.005Z",
+            "modified": "2024-01-18T05:04:36.005Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "num_totalrole",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "65700fd8-2bfa-47e3-a5e5-a4a22a95bcc8",
+            "colId": "ea4b8602-3172-4b4b-b08f-f12489bf5cd1",
+            "containerId": "",
+            "name": "Implement an endpoint allowing admins to update the status of an employee (employed or fired).",
+            "url": "https://localhost/interview/taskfive.php",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-01-18T05:09:40.168Z",
+            "modified": "2024-01-18T05:09:40.168Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"employeeID\": 3,\r\n    \"status\": \"fired\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
